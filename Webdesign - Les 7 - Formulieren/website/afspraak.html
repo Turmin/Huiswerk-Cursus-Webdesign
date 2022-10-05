@@ -1,0 +1,134 @@
+<!-- Webdesign - Les 7 - Formulieren -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tandartspraktijk KiesKeurig</title>
+        <style>
+            html,body{font-size:14px;font-family:Arial, Helvetica, sans-serif;background-color:#222222;color:#ffffff;}
+            #container{margin:0 auto;width:910px;}
+            fieldset{margin-top:10px;}
+            label{display:inline-block;margin:4px 8px 4px 0;}
+            input[type="radio"]{margin:4px 4px 8px 0;}
+            input[type="text"],input[type="email"],input[type="tel"],input[type="date"],textarea{width:300px;height:20px;padding:4px;font-size:14px;font-family:Arial, Helvetica, sans-serif;}
+            textarea{width:430px;height:100px;}
+            #datum_klachten{width:428px;}
+            #persoonlijkegegevens label{width:110px;}
+            button{background-color:#429bf5;color:#ffffff;padding:8px;cursor:pointer;}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h2>Tandartsafspraak</h2>
+            <p>Een dag niet gelachen is een dag niet geleefd. Voor een stralende lach is een mooi en gezond gebit cruciaal.
+            Niet alleen voor een stralende lach overigens.
+            Je mond, waaronder je gebit, is een belangrijk onderdeel van je lichaam met essentiële functies als kauwen en praten.
+            Logisch dus, dat dagelijkse verzorging en regelmatig tandartsbezoek nodig zijn om het gebit in goede staat te houden.</p>
+
+            <img src="afbeeldingen/1.jpeg" alt="Afbeelding tandarts" width="300" height="200">
+            <img src="afbeeldingen/2.jpeg" alt="Afbeelding tandarts" width="300" height="200">
+            <img src="afbeeldingen/3.jpeg" alt="Afbeelding tandarts" width="300" height="200">
+
+            <form action="https://formspree.io/f/xknebklv" method="POST">
+                <fieldset>
+                    <legend>Persoonlijke gegevens</legend>
+                    <div>
+                        <input type="radio" id="M" name="geslacht" value="M" checked><label for="M">Man</label>
+                        <input type="radio" id="V" name="geslacht" value="V"><label for="V">Vrouw</label>
+                        <input type="radio" id="X" name="geslacht" value="X"><label for="X">X</label>
+                    </div>
+                    <div id="persoonlijkegegevens">
+                        <div>
+                            <label for="naam">Naam:</label>
+                            <input type="text" id="naam" name="naam" required>
+                        </div>
+                        <div>
+                            <label for="adres">Adres:</label>
+                            <input type="text" id="adres" name="adres" required>
+                        </div>
+                        <div>
+                            <label for="postcode">Postcode:</label>
+                            <input type="text" id="postcode" name="postcode" placeholder="e.g. 1234AB" required>
+                        </div>
+                        <div>
+                            <label for="woonplaats">Woonplaats:</label>
+                            <input type="text" id="woonplaats" name="woonplaats" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mailadres:</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. john@doe.com" required>
+                        </div>
+                        <div>
+                            <label for="telefoonnummer">Telefoonnummer:</label>
+                            <input type="tel" id="telefoonnummer" name="telefoonnummer" required>
+                        </div>
+                        <div>
+                            <label for="geboortedatum">Geboortedatum:</label>
+                            <input type="date" id="geboortedatum" name="geboortedatum" max="2022-12-31" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Beschrijving van de klachten</legend>
+                        <label>Selecteer jouw klachten:</label>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Tandplak" id="gb_1">
+                            <label for="gb_1">Tandplak</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Caries" id="gb_2">
+                            <label for="gb_2">Gaatjes (cariës)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Gevoelige tandhalzen" id="gb_3">
+                            <label for="gb_3">Gevoelige tandhalzen</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Tandvleesontsteking" id="gb_4">
+                            <label for="gb_4">Tandvleesontsteking</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Halitose" id="gb_5">
+                            <label for="gb_5">Slechte adem (halitose)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Aften" id="gb_6">
+                            <label for="gb_6">Aften</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Droge mond" id="gb_7">
+                            <label for="gb_7">Droge mond</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Verkleurde tanden" id="gb_8">
+                            <label for="gb_8">Verkleurde tanden</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="gebitsklachten" value="Anders" id="gb_9">
+                            <label for="gb_9">Anders</label>
+                        </div>
+                        <div>
+                            <label for="gebitsklachten_foto">Indien mogelijk één of meerdere foto's toevoegen van jouw klacht:</label>
+                            <br><input type="file" id="gebitsklachten_foto" name="gebitsklachten_foto" accept=".jpg,.jpeg,.png" multiple>
+                        </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Toelichting van de klachten</legend>
+                    <div>
+                        <label for="toelichting_klachten">Omschrijf zo goed mogelijk jouw klachten:</label>
+                        <br><textarea id="toelichting_klachten" name="toelichting_klachten" maxlength="1500"></textarea>
+                    </div>
+                    <div>
+                        <label for="datum_klachten">Wanneer zijn de klachten (ongeveer) begonnen:</label>
+                        <br><input type="date" id="datum_klachten" name="datum_klachten" max="2022-12-31">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Afspraak maken</legend>
+                    <button type="submit">Afspraak maken</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
