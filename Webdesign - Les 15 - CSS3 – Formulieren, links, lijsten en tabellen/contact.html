@@ -1,0 +1,55 @@
+<!-- Webdesign - Les 15 - CSS3 – Formulieren, links, lijsten en tabellen -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Michael van Druten">
+        <meta http-equiv="content-language" content="nl-nl">
+        <title>Contact - Emma Anderson</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mijncv.html">Mijn CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Contact</h2>
+            <form>
+                <div>
+                    <label for="voornaam">Voornaam:</label>
+                    <input type="text" id="voornaam" name="voornaam" placeholder="Voer uw voornaam in" required>
+                </div>
+                <div>
+                    <label for="achternaam">Achternaam:</label>
+                    <input type="text" id="achternaam" name="achternaam" placeholder="Voer uw achternaam in" required>
+                </div>
+                <div>
+                    <label for="email">E-mailadres:</label>
+                    <input type="email" id="email" name="email" placeholder="Voer uw e-mailadres in" required>
+                </div>
+                </div>
+                <div>
+                    <label for="email">Telefoonnummer:</label>
+                    <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="Voer uw telefoonnummer in">
+                </div>
+                <div>
+                    <label for="bericht">Bericht:</label>
+                    <textarea id="bericht" name="bericht" placeholder="Typ hier uw bericht" required></textarea>
+                </div>
+                <div>
+                    <label></label>
+                    <button type="submit">Verzenden</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>&copy; Copyright 2023 Emma Anderson</div>
+        </footer>
+    </body>
+</html>

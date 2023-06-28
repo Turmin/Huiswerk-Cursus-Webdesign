@@ -1,0 +1,109 @@
+html,body{
+    margin: 0 auto;
+    background-color: #131516;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    width: 100%;
+}
+nav {
+    padding:20px;
+    font-size: 22px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    background-color: #FF7F50;
+}
+nav li {
+    float: left;
+}
+nav li a{
+    display: block;
+    width: 100px;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+nav li a:hover{
+    background-color: #FFA07A;
+    letter-spacing: 0.1em;
+}
+main{
+    padding: 20px;
+    min-width:400px;
+    max-width: 800px;
+    margin: auto auto;
+}
+main h2 {
+    text-transform: uppercase;
+}
+main #profiel {
+  text-align: justify;
+  text-justify: inter-word;
+}
+main #profiel img {
+    width:300px;
+    float: left;
+    margin-right: 10px;
+}
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+table th {
+    text-transform: uppercase;
+    background-color: #FF7F50;
+}
+table th,td {
+    padding:8px;
+    vertical-align: top;
+    border:1px solid #FFA07A;
+}
+form div {
+    padding:4px;
+}
+label {
+    vertical-align: top;
+    display:inline-block;
+    margin:4px 8px 4px 0;
+    width:120px;
+}
+input[type="text"],input[type="email"],input[type="tel"],textarea {
+    width:300px;
+    height:20px;
+    padding:4px;
+    background-color: #FFA07A;
+    border: 1px solid #FF7F50;
+}
+textarea {
+    width:300px;
+    height:120px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+button {
+    background-color:#FF7F50;
+    color:#ffffff;
+    padding:8px;
+    cursor:pointer;
+    border: 1px solid #FF7F50;
+}
+button:hover {
+    background-color:#FFA07A;
+}
+footer{
+    width: 100%;
+}
+footer div {
+    padding: 20px;
+    text-align: center;
+}
