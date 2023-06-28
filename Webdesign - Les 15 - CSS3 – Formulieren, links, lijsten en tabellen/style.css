@@ -3,14 +3,14 @@ html,body{
     background-color: #131516;
     color: #FFFFFF;
     font-size: 16px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header{
     width: 100%;
 }
 nav {
-    padding:20px;
     font-size: 22px;
+    padding: 20px;
 }
 nav ul {
     list-style-type: none;
@@ -38,7 +38,7 @@ nav li a:hover{
 }
 main{
     padding: 20px;
-    min-width:400px;
+    min-width: 400px;
     max-width: 800px;
     margin: auto auto;
 }
@@ -50,7 +50,7 @@ main #profiel {
   text-justify: inter-word;
 }
 main #profiel img {
-    width:300px;
+    width: 300px;
     float: left;
     margin-right: 10px;
 }
@@ -63,7 +63,7 @@ table th {
     background-color: #FF7F50;
 }
 table th,td {
-    padding:8px;
+    padding: 8px;
     vertical-align: top;
     border:1px solid #FFA07A;
 }
@@ -79,9 +79,10 @@ label {
 input[type="text"],input[type="email"],input[type="tel"],textarea {
     width:300px;
     height:20px;
-    padding:4px;
+    padding:6px;
     background-color: #FFA07A;
     border: 1px solid #FF7F50;
+    color: #FFFFFF;
 }
 textarea {
     width:300px;
@@ -93,7 +94,7 @@ textarea:focus, input:focus{
 button {
     background-color:#FF7F50;
     color:#ffffff;
-    padding:8px;
+    padding:12px;
     cursor:pointer;
     border: 1px solid #FF7F50;
 }
@@ -104,6 +105,6 @@ footer{
     width: 100%;
 }
 footer div {
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
